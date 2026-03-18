@@ -630,7 +630,7 @@ body.theme-football .quiz-error-inline::before{
 /* === Hero + site background art (text-only changes; reusing existing files) === */
 body.theme-football .hero--index{
   background:
-    linear-gradient(180deg, rgba(26, 92, 41, .24) 0%, rgba(26, 92, 41, .62) 58%, rgba(21, 76, 34, .92) 100%);
+    linear-gradient(180deg, rgba(26, 92, 41, .14) 0%, rgba(26, 92, 41, .18) 58%, rgba(21, 76, 34, .14) 100%);
 }
 body.theme-football .hero--index .container{
   position: relative;
@@ -665,25 +665,19 @@ body.theme-football .hero-kpi-band + .kpi-grid{
 }
 .hero-decor--ball{
   width: clamp(62px, 8vw, 118px);
-  right: clamp(32px, 8vw, 126px);
-  bottom: clamp(0px, 2vw, 22px);
-}
-.hero-decor--ball-alt{
-  width: clamp(30px, 4vw, 56px);
-  left: clamp(2px, 4vw, 30px);
-  bottom: clamp(8px, 3vw, 36px);
-  opacity: .92;
+  right: clamp(54px, 9vw, 144px);
+  bottom: clamp(4px, 2vw, 26px);
 }
 .hero-decor--boots{
   width: clamp(38px, 5vw, 70px);
-  right: clamp(8px, 3vw, 24px);
-  bottom: clamp(30px, 6vw, 82px);
+  right: clamp(16px, 5vw, 44px);
+  bottom: clamp(18px, 4vw, 52px);
   transform: rotate(-6deg);
 }
 .hero-decor--arrow{
   width: clamp(36px, 6vw, 84px);
-  right: clamp(24px, 8vw, 140px);
-  top: clamp(10px, 6vw, 90px);
+  right: clamp(2px, 5vw, 84px);
+  top: clamp(4px, 4vw, 64px);
   opacity: .8;
 }
 .hero-decor--crown{
@@ -704,35 +698,35 @@ body.theme-football section::before{
 }
 body.theme-football #result::before{
   background-image:
-    url('../../../Элементы на фон SITEBG Все что под нижним фоном/conus.png'),
-    url('../../../Элементы на фон SITEBG Все что под нижним фоном/money.png');
+    url('../img/sitebg-decor/conus.webp'),
+    url('../img/sitebg-decor/money.webp');
   background-position: left -20px top 40px, right 2% bottom 10%;
   background-size: 150px auto, 130px auto;
 }
 body.theme-football #coaches::before{
   background-image:
-    url('../../../Элементы на фон SITEBG Все что под нижним фоном/coach.png'),
-    url('../../../Элементы на фон SITEBG Все что под нижним фоном/swistl.png');
+    url('../img/sitebg-decor/coach.webp'),
+    url('../img/sitebg-decor/swistl.webp');
   background-position: right -12px top 55px, left 2% bottom 14%;
   background-size: 160px auto, 120px auto;
 }
 body.theme-football #media::before{
   background-image:
-    url('../../../Элементы на фон SITEBG Все что под нижним фоном/TV.png'),
-    url('../../../Элементы на фон SITEBG Все что под нижним фоном/book.png');
+    url('../img/sitebg-decor/TV.webp'),
+    url('../img/sitebg-decor/book.webp');
   background-position: right 2% top 12%, left 3% bottom 10%;
   background-size: 160px auto, 130px auto;
 }
 body.theme-football #chess::before{
   background-image:
-    url('../../../Элементы на фон SITEBG Все что под нижним фоном/chess.png'),
-    url('../../../Элементы на фон SITEBG Все что под нижним фоном/Chart.png');
+    url('../img/sitebg-decor/chess.webp'),
+    url('../img/sitebg-decor/Chart.webp');
   background-position: left 3% top 20%, right 3% bottom 8%;
   background-size: 130px auto, 160px auto;
 }
 body.theme-football #testing::before{
   background-image:
-    url('../../../Элементы на фон SITEBG Все что под нижним фоном/test.png');
+    url('../img/sitebg-decor/test.webp');
   background-position: right 2% center;
   background-size: 170px auto;
 }
@@ -750,12 +744,13 @@ body.theme-football section > .container{
     padding-right: 8px;
   }
   .hero-decor--ball{ right: 14%; bottom: 2%; }
+  .hero-decor--crown{ left: 2px; top: 4px; }
   .hero-decor--arrow,
   .hero-decor--boots{ display:none; }
 
   body.theme-football section::before{
     opacity: .18;
     background-size: 92px auto, 82px auto;
-    background-position: right -6px top 24px, left -2px bottom 6%;
+    background-position: right -8px top 24px, left -4px bottom 8%;
   }
 }
