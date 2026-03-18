@@ -12,10 +12,10 @@ window.SITE_CONFIG = {
   },
 
   media: {
-    siteBg: "assets/img/heroBg.png",
-    siteBgMobile: "assets/img/heroBgMobile.png",
-    heroBg: "assets/img/heroBg.png",
-    heroBgMobile: "assets/img/heroBgMobile.png",  // mobile hero background
+    siteBg: "assets/img/heroBg.webp",
+    siteBgMobile: "assets/img/heroBgMobile.webp",
+    heroBg: "assets/img/heroBg.webp",
+    heroBgMobile: "assets/img/heroBgMobile.webp",  // mobile hero background
     galleryFolder: "assets/img/gallery/",
   },
 
