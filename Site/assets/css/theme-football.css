@@ -71,7 +71,7 @@ body.theme-football .bg-hero::after{
 }
 body.theme-football .bg-hero::before{
   background-size: cover !important;
-  background-position: center center !important;
+  background-position: center top !important;
   background-repeat: no-repeat !important;
 }
 
@@ -639,18 +639,45 @@ body.theme-football .hero--index .container{
 
 body.theme-football .hero-kpi-band,
 body.theme-football .hero-kpi-band + .kpi-grid{
-  background: #fff;
+  background: transparent;
   color: #0f0f0f;
-  border-top: 3px solid #000;
+  border-top: 0;
   border-radius: 0;
   margin-left: -12px;
   margin-right: -12px;
   padding: 16px 12px;
 }
 body.theme-football .hero-kpi-band + .kpi-grid{
-  border-top: 1px solid #111;
   margin-top: 0 !important;
   padding-top: 8px;
+}
+body.theme-football .hero-kpi-band{
+  color: #fff;
+}
+body.theme-football .hero-kpi-band .cap{
+  color: rgba(255,255,255,.92);
+}
+body.theme-football .hero-kpi-band .num{
+  color: #fff;
+}
+body.theme-football .hero-kpi-band .stat{
+  background: rgba(255,255,255,.16);
+  backdrop-filter: blur(3px);
+}
+body.theme-football .hero-white-divider{
+  height: 3px;
+  background: #000;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+body.theme-football .hero-white-section{
+  background: #fff !important;
+  border-top: 0 !important;
+  padding-top: 20px !important;
+  padding-bottom: 20px;
+}
+body.theme-football .hero-white-section .card-dark{
+  background: linear-gradient(180deg, #f9f9f9, #ededed) !important;
 }
 
 .hero-visual--decorated{
