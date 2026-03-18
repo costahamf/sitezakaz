@@ -71,7 +71,7 @@ body.theme-football .bg-hero::after{
 }
 body.theme-football .bg-hero::before{
   background-size: cover !important;
-  background-position: center center !important;
+  background-position: center top !important;
   background-repeat: no-repeat !important;
 }
 
@@ -629,8 +629,7 @@ body.theme-football .quiz-error-inline::before{
 
 /* === Hero + site background art (text-only changes; reusing existing files) === */
 body.theme-football .hero--index{
-  background:
-    linear-gradient(180deg, rgba(26, 92, 41, .24) 0%, rgba(26, 92, 41, .62) 58%, rgba(21, 76, 34, .92) 100%);
+  background: transparent;
 }
 body.theme-football .hero--index .container{
   position: relative;
@@ -639,18 +638,45 @@ body.theme-football .hero--index .container{
 
 body.theme-football .hero-kpi-band,
 body.theme-football .hero-kpi-band + .kpi-grid{
-  background: #fff;
+  background: transparent;
   color: #0f0f0f;
-  border-top: 3px solid #000;
+  border-top: 0;
   border-radius: 0;
   margin-left: -12px;
   margin-right: -12px;
   padding: 16px 12px;
 }
 body.theme-football .hero-kpi-band + .kpi-grid{
-  border-top: 1px solid #111;
   margin-top: 0 !important;
   padding-top: 8px;
+}
+body.theme-football .hero-kpi-band{
+  color: #fff;
+}
+body.theme-football .hero-kpi-band .cap{
+  color: rgba(255,255,255,.92);
+}
+body.theme-football .hero-kpi-band .num{
+  color: #fff;
+}
+body.theme-football .hero-kpi-band .stat{
+  background: rgba(255,255,255,.16);
+  backdrop-filter: blur(3px);
+}
+body.theme-football .hero-white-divider{
+  height: 3px;
+  background: #000;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+body.theme-football .hero-white-section{
+  background: #fff !important;
+  border-top: 0 !important;
+  padding-top: 20px !important;
+  padding-bottom: 20px;
+}
+body.theme-football .hero-white-section .card-dark{
+  background: linear-gradient(180deg, #f9f9f9, #ededed) !important;
 }
 
 .hero-visual--decorated{
@@ -664,33 +690,39 @@ body.theme-football .hero-kpi-band + .kpi-grid{
   filter: drop-shadow(0 10px 16px rgba(0,0,0,.35));
 }
 .hero-decor--ball{
-  width: clamp(62px, 8vw, 118px);
-  right: clamp(32px, 8vw, 126px);
-  bottom: clamp(0px, 2vw, 22px);
-}
-.hero-decor--ball-alt{
-  width: clamp(30px, 4vw, 56px);
-  left: clamp(2px, 4vw, 30px);
-  bottom: clamp(8px, 3vw, 36px);
-  opacity: .92;
-}
-.hero-decor--boots{
-  width: clamp(38px, 5vw, 70px);
-  right: clamp(8px, 3vw, 24px);
-  bottom: clamp(30px, 6vw, 82px);
-  transform: rotate(-6deg);
+  width: clamp(52px, 4.8vw, 70px);
+  right: clamp(56px, 10vw, 156px);
+  bottom: clamp(4px, 1.2vw, 14px);
 }
 .hero-decor--arrow{
-  width: clamp(36px, 6vw, 84px);
-  right: clamp(24px, 8vw, 140px);
-  top: clamp(10px, 6vw, 90px);
-  opacity: .8;
+  width: clamp(44px, 4vw, 68px);
+  right: clamp(8px, 4vw, 60px);
+  top: clamp(8px, 2vw, 32px);
+  opacity: .75;
+}
+.hero-decor--arrow-soft{
+  width: clamp(40px, 3.5vw, 62px);
+  left: clamp(8px, 3vw, 42px);
+  top: clamp(26px, 5vw, 70px);
+  opacity: .55;
+}
+.hero-decor--arrow-top{
+  width: clamp(34px, 3vw, 52px);
+  right: clamp(90px, 10vw, 180px);
+  top: clamp(-2px, 1vw, 12px);
+  opacity: .5;
 }
 .hero-decor--crown{
-  width: clamp(40px, 4vw, 68px);
+  width: clamp(34px, 3vw, 54px);
   left: clamp(8px, 2vw, 20px);
-  top: clamp(2px, 1vw, 14px);
-  opacity: .88;
+  top: clamp(0px, 1vw, 12px);
+  opacity: .82;
+}
+.hero-decor--ball-mini{
+  width: clamp(20px, 2vw, 32px);
+  left: clamp(16px, 5vw, 60px);
+  bottom: clamp(16px, 3vw, 44px);
+  opacity: .78;
 }
 
 body.theme-football section::before{
@@ -704,37 +736,37 @@ body.theme-football section::before{
 }
 body.theme-football #result::before{
   background-image:
-    url('../../../Элементы на фон SITEBG Все что под нижним фоном/conus.png'),
-    url('../../../Элементы на фон SITEBG Все что под нижним фоном/money.png');
-  background-position: left -20px top 40px, right 2% bottom 10%;
-  background-size: 150px auto, 130px auto;
+    url('../img/sitebg-decor/conus.webp'),
+    url('../img/sitebg-decor/money.webp');
+  background-position: left 2% top 58px, left 11% top 154px;
+  background-size: 126px auto, 112px auto;
 }
 body.theme-football #coaches::before{
   background-image:
-    url('../../../Элементы на фон SITEBG Все что под нижним фоном/coach.png'),
-    url('../../../Элементы на фон SITEBG Все что под нижним фоном/swistl.png');
-  background-position: right -12px top 55px, left 2% bottom 14%;
-  background-size: 160px auto, 120px auto;
+    url('../img/sitebg-decor/coach.webp'),
+    url('../img/sitebg-decor/swistl.webp');
+  background-position: right 2% top 92px, right 8% top 210px;
+  background-size: 150px auto, 92px auto;
 }
 body.theme-football #media::before{
   background-image:
-    url('../../../Элементы на фон SITEBG Все что под нижним фоном/TV.png'),
-    url('../../../Элементы на фон SITEBG Все что под нижним фоном/book.png');
-  background-position: right 2% top 12%, left 3% bottom 10%;
-  background-size: 160px auto, 130px auto;
+    url('../img/sitebg-decor/TV.webp'),
+    url('../img/sitebg-decor/book.webp');
+  background-position: left 2% top 84px, left 9% top 206px;
+  background-size: 128px auto, 98px auto;
 }
 body.theme-football #chess::before{
   background-image:
-    url('../../../Элементы на фон SITEBG Все что под нижним фоном/chess.png'),
-    url('../../../Элементы на фон SITEBG Все что под нижним фоном/Chart.png');
-  background-position: left 3% top 20%, right 3% bottom 8%;
-  background-size: 130px auto, 160px auto;
+    url('../img/sitebg-decor/chess.webp'),
+    url('../img/sitebg-decor/Chart.webp');
+  background-position: right 2% top 70px, right 8% top 180px;
+  background-size: 124px auto, 118px auto;
 }
 body.theme-football #testing::before{
   background-image:
-    url('../../../Элементы на фон SITEBG Все что под нижним фоном/test.png');
-  background-position: right 2% center;
-  background-size: 170px auto;
+    url('../img/sitebg-decor/test.webp');
+  background-position: left 2% top 88px;
+  background-size: 116px auto;
 }
 body.theme-football section > .container{
   position: relative;
@@ -749,13 +781,55 @@ body.theme-football section > .container{
     padding-left: 8px;
     padding-right: 8px;
   }
-  .hero-decor--ball{ right: 14%; bottom: 2%; }
-  .hero-decor--arrow,
-  .hero-decor--boots{ display:none; }
+  body.theme-football .hero-white-divider{
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+  .hero-decor--ball{
+    width: clamp(50px, 17vw, 62px);
+    right: 24%;
+    bottom: 2%;
+  }
+  .hero-decor--arrow{
+    width: 42px;
+    right: 4%;
+    top: 6%;
+  }
+  .hero-decor--arrow-soft{
+    width: 36px;
+    left: 4%;
+    top: 24%;
+  }
+  .hero-decor--arrow-top{
+    width: 30px;
+    right: 34%;
+    top: 2%;
+  }
+  .hero-decor--crown{
+    width: 30px;
+    left: 3px;
+    top: 4px;
+  }
+  .hero-decor--ball-mini{
+    width: 22px;
+    left: 10%;
+    bottom: 20%;
+  }
 
   body.theme-football section::before{
-    opacity: .18;
-    background-size: 92px auto, 82px auto;
-    background-position: right -6px top 24px, left -2px bottom 6%;
+    opacity: .2;
+    background-size: 86px auto, 70px auto;
+    background-position: right -12px top 28px, right 14px top 122px;
+  }
+}
+
+@media (min-width: 992px){
+  body.theme-football .hero--index .hero-visual img{
+    width: auto !important;
+    height: min(58vh, 560px) !important;
+    max-width: none !important;
+    max-height: none !important;
+    transform: none !important;
+    object-fit: contain !important;
   }
 }
