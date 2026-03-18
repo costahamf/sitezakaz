@@ -232,7 +232,7 @@
     host.innerHTML = `
       <div class="card-dark p-4 p-lg-5">
         <div class="row g-4 align-items-center">
-          <div class="col-lg-7">
+          <div class="col-12">
             <h3 class="fw-black mb-2" style="font-weight:950;">${c.title || "Шахматы + футбол"}</h3>
             <div class="muted mb-3">${c.lead || ""}</div>
             <div class="list-check">
@@ -240,11 +240,6 @@
             </div>
             <div class="glass p-3 mt-3">
               <div class="muted small">${c.note || ""}</div>
-            </div>
-          </div>
-          <div class="col-lg-5">
-            <div class="card-image">
-              <img src="assets/img/gallery/05.svg" alt="Шахматы (замените на фото)">
             </div>
           </div>
         </div>
