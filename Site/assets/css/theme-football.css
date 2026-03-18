@@ -622,3 +622,136 @@ body.theme-football .quiz-title-gradient{
 body.theme-football .quiz-error-inline::before{
   color: var(--brand-yellow) !important;
 }
+
+/* === Hero + site background art (text-only changes; reusing existing files) === */
+body.theme-football .hero--index{
+  background:
+    linear-gradient(180deg, rgba(26, 92, 41, .24) 0%, rgba(26, 92, 41, .62) 58%, rgba(21, 76, 34, .92) 100%);
+}
+body.theme-football .hero--index .container{
+  position: relative;
+  z-index: 1;
+}
+
+body.theme-football .hero-kpi-band,
+body.theme-football .hero-kpi-band + .kpi-grid{
+  background: #fff;
+  color: #0f0f0f;
+  border-top: 3px solid #000;
+  border-radius: 0;
+  margin-left: -12px;
+  margin-right: -12px;
+  padding: 16px 12px;
+}
+body.theme-football .hero-kpi-band + .kpi-grid{
+  border-top: 1px solid #111;
+  margin-top: 0 !important;
+  padding-top: 8px;
+}
+
+.hero-visual--decorated{
+  position: relative;
+}
+.hero-decor{
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+  user-select: none;
+  filter: drop-shadow(0 10px 16px rgba(0,0,0,.35));
+}
+.hero-decor--ball{
+  width: clamp(62px, 8vw, 118px);
+  right: clamp(32px, 8vw, 126px);
+  bottom: clamp(0px, 2vw, 22px);
+}
+.hero-decor--ball-alt{
+  width: clamp(30px, 4vw, 56px);
+  left: clamp(2px, 4vw, 30px);
+  bottom: clamp(8px, 3vw, 36px);
+  opacity: .92;
+}
+.hero-decor--boots{
+  width: clamp(38px, 5vw, 70px);
+  right: clamp(8px, 3vw, 24px);
+  bottom: clamp(30px, 6vw, 82px);
+  transform: rotate(-6deg);
+}
+.hero-decor--arrow{
+  width: clamp(36px, 6vw, 84px);
+  right: clamp(24px, 8vw, 140px);
+  top: clamp(10px, 6vw, 90px);
+  opacity: .8;
+}
+.hero-decor--crown{
+  width: clamp(40px, 4vw, 68px);
+  left: clamp(8px, 2vw, 20px);
+  top: clamp(2px, 1vw, 14px);
+  opacity: .88;
+}
+
+body.theme-football section::before{
+  content:"";
+  position:absolute;
+  inset: 0;
+  pointer-events:none;
+  background-repeat: no-repeat;
+  z-index: 0;
+  opacity: .22;
+}
+body.theme-football #result::before{
+  background-image:
+    url('../../../Элементы на фон SITEBG Все что под нижним фоном/conus.png'),
+    url('../../../Элементы на фон SITEBG Все что под нижним фоном/money.png');
+  background-position: left -20px top 40px, right 2% bottom 10%;
+  background-size: 150px auto, 130px auto;
+}
+body.theme-football #coaches::before{
+  background-image:
+    url('../../../Элементы на фон SITEBG Все что под нижним фоном/coach.png'),
+    url('../../../Элементы на фон SITEBG Все что под нижним фоном/swistl.png');
+  background-position: right -12px top 55px, left 2% bottom 14%;
+  background-size: 160px auto, 120px auto;
+}
+body.theme-football #media::before{
+  background-image:
+    url('../../../Элементы на фон SITEBG Все что под нижним фоном/TV.png'),
+    url('../../../Элементы на фон SITEBG Все что под нижним фоном/book.png');
+  background-position: right 2% top 12%, left 3% bottom 10%;
+  background-size: 160px auto, 130px auto;
+}
+body.theme-football #chess::before{
+  background-image:
+    url('../../../Элементы на фон SITEBG Все что под нижним фоном/chess.png'),
+    url('../../../Элементы на фон SITEBG Все что под нижним фоном/Chart.png');
+  background-position: left 3% top 20%, right 3% bottom 8%;
+  background-size: 130px auto, 160px auto;
+}
+body.theme-football #testing::before{
+  background-image:
+    url('../../../Элементы на фон SITEBG Все что под нижним фоном/test.png');
+  background-position: right 2% center;
+  background-size: 170px auto;
+}
+body.theme-football section > .container{
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 991.98px){
+  body.theme-football .hero-kpi-band,
+  body.theme-football .hero-kpi-band + .kpi-grid{
+    margin-left: -8px;
+    margin-right: -8px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .hero-decor--ball{ right: 14%; bottom: 2%; }
+  .hero-decor--arrow,
+  .hero-decor--boots{ display:none; }
+
+  body.theme-football section::before{
+    opacity: .18;
+    background-size: 92px auto, 82px auto;
+    background-position: right -6px top 24px, left -2px bottom 6%;
+  }
+}
