@@ -108,12 +108,12 @@ window.SITE_DATA = {
       "Работа по системе: оценка уровня → обратная связь родителям → индивидуальные цели → отслеживание прогресса → корректировка программы."
         ],
     team: [
-      { name:"Михаил Тагиев", education:"Тренер и основатель школы", photo:"../Фото тренеры/Михаил Тагиев, тренер и основатель школы.png" },
-      { name:"Егор", education:"Тренер общей подготовки", photo:"../Фото тренеры/Егор, тренер общей подготовки.png" },
-      { name:"Игорь", education:"Тренер сборной", photo:"../Фото тренеры/Игорь тренер Сборной.png" },
-      { name:"Олег", education:"Тренер по физической подготовке", photo:"../Фото тренеры/Олег , тренер по физической подготовки.png" },
-      { name:"Александра", education:"Спортивный психолог", photo:"../Фото тренеры/Александра, спортивный психолог.png" },
-      { name:"Владимир", education:"Тренер начальной подготовки", photo:"../Фото тренеры/Владимир тренер начальной подготовки.png" }
+      { name:"Михаил Тагиев", education:"Тренер и основатель школы", photo:"assets/img/coaches/mihail-tagiev-osnovatel.webp" },
+      { name:"Егор", education:"Тренер общей подготовки", photo:"assets/img/coaches/egot-obshaya-podgotovka.webp" },
+      { name:"Игорь", education:"Тренер сборной", photo:"assets/img/coaches/igor-trener-sbornoy.webp" },
+      { name:"Олег", education:"Тренер по физической подготовке", photo:"assets/img/coaches/oleg-fizpodgotovka.webp" },
+      { name:"Александра", education:"Спортивный психолог", photo:"assets/img/coaches/Siteassetsimgcoachesaleksandra-psycholog.webp" },
+      { name:"Владимир", education:"Тренер начальной подготовки", photo:"assets/img/coaches/vladimir-nachalnaya-podgotovka.webp" }
     ]
   },
 
