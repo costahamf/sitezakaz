@@ -112,7 +112,7 @@
     const cardHTML = (t)=>`
       <div class="card-dark p-0 h-100 profile-card">
         <div class="profile-media">
-          <img src="${t.photo || "assets/img/graduates/grad-1.svg"}" alt="${t.name}">
+          <img src="${t.photo || "assets/img/graduates/grad-1.svg"}" alt="${t.name}" loading="lazy">
         </div>
         <div class="p-3">
           <div class="fw-bold">${t.name}</div>
@@ -149,7 +149,7 @@
     const cardHTML = (c)=>`
       <div class="card-dark p-0 h-100 profile-card">
         <div class="profile-media">
-          <img src="${c.photo || "assets/img/coaches/coach-1.svg"}" alt="${c.name}">
+          <img src="${c.photo || "assets/img/coaches/coach-1.svg"}" alt="${c.name}" loading="lazy">
         </div>
         <div class="p-3">
           <div class="fw-bold">${c.name}</div>

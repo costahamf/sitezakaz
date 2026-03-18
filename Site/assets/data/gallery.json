@@ -7,6 +7,18 @@
     {
       "src": "assets/img/gallery/02.svg",
       "caption": "Мини-игры • решения"
+    },
+    {
+      "src": "assets/img/gallery/03.svg",
+      "caption": "Игровой эпизод • внимание к деталям"
+    },
+    {
+      "src": "assets/img/gallery/04.svg",
+      "caption": "Работа в группе • скорость решения"
+    },
+    {
+      "src": "assets/img/gallery/05.svg",
+      "caption": "Атмосфера тренировки"
     }
   ],
   "videoSlides": [
@@ -37,12 +49,12 @@
   ],
   "testingSlides": [
     {
-      "src": "assets/img/gallery/03.svg",
-      "caption": "Пример карточки тестирования #1"
+      "src": "assets/img/sitebg-decor/test.webp",
+      "caption": "Тестирование по авторской методике"
     },
     {
-      "src": "assets/img/gallery/04.svg",
-      "caption": "Пример карточки тестирования #2"
+      "src": "assets/img/sitebg-decor/test.webp",
+      "caption": "Оценка динамики показателей"
     }
   ]
 }
