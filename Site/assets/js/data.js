@@ -108,11 +108,12 @@ window.SITE_DATA = {
       "Работа по системе: оценка уровня → обратная связь родителям → индивидуальные цели → отслеживание прогресса → корректировка программы."
         ],
     team: [
-      { name:"ФИО тренера 1", education:"Образование: укажите (например, высшее спортивное)", photo:"assets/img/coaches/coach-1.png" },
-      { name:"ФИО тренера 2", education:"Образование: укажите", photo:"assets/img/coaches/coach-2.png" },
-      { name:"ФИО тренера 3", education:"Образование: укажите", photo:"assets/img/coaches/coach-3.svg" },
-      { name:"ФИО тренера 4", education:"Образование: укажите", photo:"assets/img/coaches/coach-4.svg" },
-      { name:"ФИО тренера 5", education:"Образование: укажите", photo:"assets/img/coaches/coach-5.svg" }
+      { name:"Михаил Тагиев", education:"Тренер и основатель школы", photo:"assets/img/coaches/mikhail-tagiev.png" },
+      { name:"Владимир", education:"Тренер начальной подготовки", photo:"assets/img/coaches/vladimir-base.png" },
+      { name:"Егор", education:"Тренер общей подготовки", photo:"assets/img/coaches/egor-general.png" },
+      { name:"Игорь", education:"Тренер сборной", photo:"assets/img/coaches/igor-sbornaya.png" },
+      { name:"Олег", education:"Тренер по физической подготовке", photo:"assets/img/coaches/oleg-fitness.png" },
+      { name:"Александра", education:"Спортивный психолог", photo:"assets/img/coaches/alexandra-psychologist.png" }
     ]
   },
 

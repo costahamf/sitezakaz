@@ -15,7 +15,7 @@
 body.theme-football{
   font-family:var(--ff-body);
   color:var(--brand-white);
-  background-color:var(--brand-black) !important;
+  background-color:#ffffff !important;
   background-image:none !important;
 }
 
@@ -69,6 +69,9 @@ body.theme-football .bg-hero::before{
   background-size: cover !important;
   background-position: center center !important;
   background-repeat: no-repeat !important;
+}
+body.theme-football .hero.hero--index{
+  overflow:hidden;
 }
 
 body.theme-football .bg-hero::after,
@@ -190,6 +193,10 @@ body.theme-football section{
   background:var(--surface-light);
   color:#141414;
   border-top:3px solid #111;
+}
+body.theme-football #steps{
+  background:#fff;
+  border-top:4px solid #111;
 }
 body.theme-football section:nth-of-type(even){
   background:
@@ -318,6 +325,9 @@ body.theme-football .kpi-grid .feature-icon-img{
   display: block;
 }
 body.theme-football .kpi-grid .feature-icon-img[src*="location.webp"]{
+  width: 170px !important;
+}
+body.theme-football .kpi-grid .feature-icon-img[src*="location-block.png"]{
   width: 170px !important;
 }
 
@@ -463,6 +473,68 @@ body.theme-football .hazard-line{
   background:repeating-linear-gradient(45deg, #0f0f0f 0 12px, var(--brand-yellow) 12px 24px);
 }
 
+/* Hero custom decorations from "Элементы на главный верхний фон HErobg" */
+body.theme-football .hero-decor{
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  z-index:-1;
+}
+body.theme-football .hero-decor__item{
+  position:absolute;
+  object-fit:contain;
+  filter: drop-shadow(0 6px 14px rgba(0,0,0,.28));
+  opacity:.92;
+}
+body.theme-football .hero-decor__item--boots{ width:150px; left:8%; bottom:8%; }
+body.theme-football .hero-decor__item--crown{ width:118px; right:13%; top:13%; }
+body.theme-football .hero-decor__item--arrow-left{ width:90px; left:4%; top:22%; }
+body.theme-football .hero-decor__item--arrow-right{ width:92px; right:6%; bottom:28%; }
+
+body.theme-football .hero-visual--with-ball{
+  position:relative;
+}
+body.theme-football .hero-visual--with-ball .hero-ball{
+  position:absolute;
+  width:110px;
+  right:7%;
+  bottom:8%;
+  z-index:2;
+  filter: drop-shadow(0 10px 12px rgba(0,0,0,.35));
+}
+
+/* Site background decorative elements for SiteBG */
+body.theme-football::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:-2;
+  background-image:
+    url("../img/decor/sitebg/coach.png"),
+    url("../img/decor/sitebg/chess.png"),
+    url("../img/decor/sitebg/cone.png"),
+    url("../img/decor/sitebg/book.png"),
+    url("../img/decor/sitebg/money.png"),
+    url("../img/decor/sitebg/tv.png"),
+    url("../img/decor/sitebg/chart.png"),
+    url("../img/decor/sitebg/whistle.png"),
+    url("../img/decor/sitebg/test.png");
+  background-repeat:no-repeat;
+  background-size:150px, 120px, 95px, 95px, 100px, 110px, 96px, 110px, 120px;
+  background-position:
+    1% 36%,
+    97% 44%,
+    3% 58%,
+    95% 62%,
+    5% 78%,
+    97% 76%,
+    6% 92%,
+    94% 90%,
+    8% 106%;
+  opacity:.15;
+}
+
 @media (max-width: 991.98px){
   body.theme-football .nav-glass .navbar-collapse{
     background:linear-gradient(180deg, #0b0b0b 0%, #151515 100%) !important;
@@ -471,6 +543,36 @@ body.theme-football .hazard-line{
   }
   body.theme-football .section-title::after,
   body.theme-football .tape-title::after{ display:none; }
+  body.theme-football .hero-decor__item--boots{ width:112px; left:4%; bottom:4%; }
+  body.theme-football .hero-decor__item--crown{ width:92px; right:6%; top:10%; }
+  body.theme-football .hero-decor__item--arrow-left{ width:64px; left:1%; top:26%; }
+  body.theme-football .hero-decor__item--arrow-right{ width:70px; right:1%; bottom:24%; }
+  body.theme-football .hero-visual--with-ball .hero-ball{ width:88px; right:10%; bottom:6%; }
+  body.theme-football::before{
+    background-size:112px, 84px, 72px, 72px, 72px, 84px, 74px, 86px, 84px;
+    background-position:
+      -2% 34%,
+      103% 42%,
+      -3% 55%,
+      102% 62%,
+      0% 78%,
+      102% 78%,
+      -1% 92%,
+      101% 90%,
+      -2% 104%;
+    opacity:.13;
+  }
+}
+
+@media (max-width: 767.98px){
+  body.theme-football .bg-hero::before{
+    background-size: cover !important;
+    background-position: center bottom !important;
+  }
+  body.theme-football .hero-decor__item--arrow-left,
+  body.theme-football .hero-decor__item--arrow-right{
+    display:none;
+  }
 }
 
 
