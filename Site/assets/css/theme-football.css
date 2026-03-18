@@ -704,35 +704,35 @@ body.theme-football section::before{
 }
 body.theme-football #result::before{
   background-image:
-    url('../img/conus.webp'),
-    url('../img/money.webp');
+    url('../../../Элементы на фон SITEBG Все что под нижним фоном/conus.png'),
+    url('../../../Элементы на фон SITEBG Все что под нижним фоном/money.png');
   background-position: left -20px top 40px, right 2% bottom 10%;
   background-size: 150px auto, 130px auto;
 }
 body.theme-football #coaches::before{
   background-image:
-    url('../img/coach.webp'),
-    url('../img/swistl.webp');
+    url('../../../Элементы на фон SITEBG Все что под нижним фоном/coach.png'),
+    url('../../../Элементы на фон SITEBG Все что под нижним фоном/swistl.png');
   background-position: right -12px top 55px, left 2% bottom 14%;
   background-size: 160px auto, 120px auto;
 }
 body.theme-football #media::before{
   background-image:
-    url('../img/TV.webp'),
-    url('../img/book.webp');
+    url('../../../Элементы на фон SITEBG Все что под нижним фоном/TV.png'),
+    url('../../../Элементы на фон SITEBG Все что под нижним фоном/book.png');
   background-position: right 2% top 12%, left 3% bottom 10%;
   background-size: 160px auto, 130px auto;
 }
 body.theme-football #chess::before{
   background-image:
-    url('../img/chess.webp'),
-    url('../img/Chart.webp');
+    url('../../../Элементы на фон SITEBG Все что под нижним фоном/chess.png'),
+    url('../../../Элементы на фон SITEBG Все что под нижним фоном/Chart.png');
   background-position: left 3% top 20%, right 3% bottom 8%;
   background-size: 130px auto, 160px auto;
 }
 body.theme-football #testing::before{
   background-image:
-    url('../img/test.webp');
+    url('../../../Элементы на фон SITEBG Все что под нижним фоном/test.png');
   background-position: right 2% center;
   background-size: 170px auto;
 }

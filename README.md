@@ -7,31 +7,31 @@
 ## Ожидаемые файлы в `Site/assets/img/`
 
 ### Фоны
-- `heroBg.webp`
-- `heroBgMobile.webp`
+- `heroBg.png`
+- `heroBgMobile.png`
 
 ### Элементы HERO
-- `ball.webp`
-- `ball2.webp`
-- `boots.webp`
-- `arrow1.webp`
-- `crown.webp`
+- `ball.png`
+- `ball2.png`
+- `boots.png`
+- `arrow1.png`
+- `crown.png`
 
 ### Элементы блоков
-- `program.webp`
-- `location.webp`
-- `rewies.webp`
+- `program.png`
+- `location.png`
+- `rewies.png`
 
 ### Элементы SITEBG
-- `conus.webp`
-- `money.webp`
-- `coach.webp`
-- `swistl.webp`
-- `TV.webp`
-- `book.webp`
-- `chess.webp`
-- `Chart.webp`
-- `test.webp`
+- `conus.png`
+- `money.png`
+- `coach.png`
+- `swistl.png`
+- `TV.png`
+- `book.png`
+- `chess.png`
+- `Chart.png`
+- `test.png`
 
 ## Примечания
 - Бинарные файлы агентом не создавались и не изменялись.
