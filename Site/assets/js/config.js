@@ -12,10 +12,10 @@ window.SITE_CONFIG = {
   },
 
   media: {
-    siteBg: "assets/img/44.png",
-    siteBgMobile: "assets/img/44.png",
-    heroBg: "assets/img/33.png",
-    heroBgMobile: "assets/img/33.png",  // ← замени на hero-bg.jpg/png/webp
+    siteBg: "assets/img/heroBg.png",
+    siteBgMobile: "assets/img/heroBgMobile.png",
+    heroBg: "assets/img/heroBg.png",
+    heroBgMobile: "assets/img/heroBgMobile.png",  // mobile hero background
     galleryFolder: "assets/img/gallery/",
   },
 
