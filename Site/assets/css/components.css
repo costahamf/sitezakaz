@@ -9,7 +9,7 @@
 
 .hero{
   padding-top: 92px;
-  padding-bottom: 34px;
+  padding-bottom: 18px;
   position: relative;
 }
 .hero h1{
@@ -46,7 +46,7 @@ body[data-page="reviews"] .hero{ padding-top: 86px; padding-bottom: 18px; }
 /* Desktop + tablet: place KPI row noticeably lower in the first screen */
 @media (min-width: 768px){
   .hero--index #heroKpis{
-    margin-top: clamp(150px, 30vh, 360px) !important;
+    margin-top: clamp(72px, 12vh, 140px) !important;
   }
 }
 
@@ -108,75 +108,51 @@ body[data-page="reviews"] .hero{ padding-top: 86px; padding-bottom: 18px; }
   border-radius: var(--radius-lg);
   overflow: visible;
   position: relative;
-  display: inline-block;
-  width: fit-content;
+  display: block;
+  width: 100%;
   max-width: 100%;
-  padding: 10px;
+  padding: 0;
 }
 .hero-visual--placeholder{
   min-height: 0;
 }
 .hero-visual img{
-  width: auto;
+  width: 100%;
   height: auto;
   display: block;
   object-fit: contain;
-  max-width: 100%;
-  max-height: 640px;
+  max-width: min(903px, 100%);
+  max-height: none;
   filter: none;
 }
 /* Desktop control knobs for right hero object (heroboy.webp) */
 .hero--index{
-  --hero-boy-x: 100px;
-  --hero-boy-y: 290px;
-  --hero-boy-scale: 1.4;
-  --hero-boy-rotate: 0deg;
   --hero-boy-max-width: 903px;
-  --hero-boy-max-height: 540px;
 }
-/* Desktop presets by common screen widths:
-   1366x768, 1920x1080 (base), 2560x1440 */
-@media (min-width: 992px) and (max-width: 1599px){
-  .hero--index{
-    --hero-boy-x: 42px;
-    --hero-boy-y: 228px;
-    --hero-boy-scale: 1.18;
-    --hero-boy-max-width: 820px;
-    --hero-boy-max-height: 500px;
+@media (max-width: 991.98px){
+  .hero--index .hero-visual{
+    display: flex;
+    justify-content: center;
   }
-}
-@media (min-width: 1600px) and (max-width: 2399px){
-  .hero--index{
-    --hero-boy-x: 100px;
-    --hero-boy-y: 290px;
-    --hero-boy-scale: 1.4;
-    --hero-boy-max-width: 903px;
-    --hero-boy-max-height: 540px;
-  }
-}
-@media (min-width: 2400px){
-  .hero--index{
-    --hero-boy-x: 162px;
-    --hero-boy-y: 362px;
-    --hero-boy-scale: 1.4;
-    --hero-boy-max-width: 1060px;
-    --hero-boy-max-height: 640px;
-  }
-}
-@media (max-width: 992px){
-  .hero-visual img{
-    max-height: 460px;
-    transform: none !important;
+  .hero--index .hero-visual img{
+    max-width: 100%;
   }
 }
 @media (min-width: 992px){
+  .hero--index .col-lg-6[aria-hidden="true"]{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .hero--index .hero-visual{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 100%;
+  }
   .hero--index .hero-visual img{
-    width: auto !important;
+    width: min(100%, var(--hero-boy-max-width)) !important;
     max-width: var(--hero-boy-max-width) !important;
-    max-height: var(--hero-boy-max-height) !important;
-    transform: translateX(var(--hero-boy-x)) translateY(var(--hero-boy-y)) rotate(var(--hero-boy-rotate)) scale(var(--hero-boy-scale)) !important;
-    transform-origin: center bottom !important;
-    will-change: transform;
+    margin-right: 0;
   }
 }
 
@@ -204,8 +180,13 @@ body[data-page="reviews"] .hero{ padding-top: 86px; padding-bottom: 18px; }
 }
 @media (max-width: 576px){
   .hero--index .row{ row-gap: 10px; }
-  .hero-visual{ min-height: 260px; }
+  .hero-visual{ min-height: 0; }
   .hero--index #heroKpis{ margin-top: 1rem !important; }
+}
+
+.hero-quick-links{
+  background: #fff;
+  padding: 1rem 0 0;
 }
 
 
