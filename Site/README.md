@@ -14,8 +14,15 @@
 Там:
 - `brand.logo` — логотип (замени файл `assets/img/logo.svg`)
 - `media.heroBg` — фон hero (замени `assets/img/hero-bg.svg` на JPG/PNG/WebP)
+- `media.heroBgMobile` — отдельный фон hero для телефонов
 - `contacts` — телефон/WhatsApp/Telegram
 - `forms` — способ отправки заявок
+
+### Рекомендуемые размеры hero-фона
+- Десктоп (`media.heroBg`): **1920×1080** (16:9), файл `assets/img/heroBg.webp`.
+- Мобильный (`media.heroBgMobile`): **1080×1920** (9:16), файл `assets/img/heroBg-mobile.webp`.
+
+Почему так: отдельный мобильный файл с вертикальной композицией убирает сильное масштабирование/«растягивание» фона на узких экранах.
 
 ## 2) Где менять контент (цены, локации, отзывы)
 Открой:
