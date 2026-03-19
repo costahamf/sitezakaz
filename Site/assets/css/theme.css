@@ -570,3 +570,16 @@ body.theme-football section {
 .nav-glass .navbar-collapse .nav-link {
   color: #1a1a1a !important;
 }
+/* Desktop: extend hero background through the quick icons row; keep mobile unchanged */
+@media (min-width: 992px) {
+  .hero-quick-links {
+    background: transparent !important;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-glass .navbar-collapse {
+    background: transparent !important;
+  }
+}
