@@ -15,7 +15,7 @@ window.SITE_CONFIG = {
     siteBg: "assets/img/44.png",
     siteBgMobile: "assets/img/44.png",
     heroBg: "assets/img/heroBg.webp",
-    heroBgMobile: "assets/img/heroBg-mobile.webp",
+    heroBgMobile: "assets/img/heroBg.webp",
     galleryFolder: "assets/img/gallery/",
   },
 
