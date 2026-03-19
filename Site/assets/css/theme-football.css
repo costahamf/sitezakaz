@@ -70,6 +70,12 @@ body.theme-football .bg-hero::before{
   background-position: center center !important;
   background-repeat: no-repeat !important;
 }
+@media (max-width: 991.98px){
+  body.theme-football .bg-hero::before{
+    background-size: 100% auto !important;
+    background-position: center top !important;
+  }
+}
 
 body.theme-football .bg-hero::after,
 body.theme-football .hero::after{
