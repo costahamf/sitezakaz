@@ -31,6 +31,21 @@ body.theme-football{
   body.theme-football::after{
     display: none;
   }
+
+}
+
+/* Desktop: show the configured hero background behind sections (instead of flat black) */
+@media (min-width: 992px){
+  body.theme-football{
+    background-image: url("../img/heroBg.webp") !important;
+    background-repeat: repeat-y !important;
+    background-position: center top !important;
+    background-size: 100% auto !important;
+    background-attachment: scroll;
+  }
+  body.theme-football::after{
+    display: none;
+  }
 }
 
 /* Desktop: show the configured hero background behind sections (instead of flat black) */
@@ -655,8 +670,12 @@ body.theme-football .quiz-error-inline::before{
 }
 
 @media (min-width: 992px) {
-  .hero-quick-links {
-    background: transparent !important;
+  .hero-quick-links{
+    background-image: url("../img/heroBg.webp") !important;
+    background-repeat: no-repeat !important;
+    background-position: center top !important;
+    background-size: cover !important;
+    background-color: transparent !important;
   }
 }
 
