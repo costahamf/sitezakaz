@@ -70,7 +70,13 @@
 
   function applyBackgrounds(){
     const media = SITE_CONFIG?.media || {};
-    const siteBg = pickBg(media.siteBg || media.heroBg, media.siteBgMobile);
+    const desktopSiteBg = (current === "index")
+      ? (media.heroBg || media.siteBg)
+      : (media.siteBg || media.heroBg);
+    const mobileSiteBg = (current === "index")
+      ? (media.heroBgMobile || media.siteBgMobile || desktopSiteBg)
+      : (media.siteBgMobile || media.heroBgMobile || desktopSiteBg);
+    const siteBg = pickBg(desktopSiteBg, mobileSiteBg);
 
     if(siteBg){
       const absSite = new URL(siteBg, document.baseURI).href;

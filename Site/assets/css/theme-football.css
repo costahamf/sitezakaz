@@ -19,6 +19,33 @@ body.theme-football{
   background-image:none !important;
 }
 
+/* Desktop: show the configured hero background behind sections (instead of flat black) */
+@media (min-width: 992px){
+  body.theme-football{
+    background-image: url("../img/heroBg.webp") !important;
+    background-repeat: no-repeat !important;
+    background-position: center top !important;
+    background-size: 100% auto !important;
+    background-attachment: scroll;
+  }
+  body.theme-football::after{
+    display: none;
+  }
+
+  /* Keep quick-links transparent on desktop so body hero background stays continuous */
+  body.theme-football section.hero-quick-links,
+  body.theme-football section.hero-quick-links:nth-of-type(even){
+    background-image: url("../img/heroBg.webp") !important;
+    background-repeat: no-repeat !important;
+    background-position: center top !important;
+    background-size: 100% auto !important;
+    background-attachment: fixed !important;
+    background-color: transparent !important;
+    border-top: none !important;
+  }
+
+}
+
 /* Decor is temporarily disabled.
    When you're ready, send a per-section placement list, and we'll fill this table:
    Section | Element file | X (left/right + value) | Y (top/bottom + value) | Size (px)
@@ -627,8 +654,8 @@ body.theme-football .quiz-error-inline::before{
 }
 
 @media (min-width: 992px) {
-  .hero-quick-links {
-    background: transparent !important;
+  body.theme-football .hero-quick-links{
+    border-top: none !important;
   }
 }
 
