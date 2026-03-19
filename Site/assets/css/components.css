@@ -1822,6 +1822,6 @@ body[data-page="cabinet"] #siteFooter{
 
 @media (min-width: 992px){
   .hero--index .hero-visual img{
-    transform: translateY(128px);  /* десктоп: минус - выше, плюс - ниже */
+    transform: translateY(0);  /* фикс перекрытия quick-links на десктопе */
   }
 }
