@@ -22,6 +22,20 @@ body.theme-football{
 /* Desktop: show the configured hero background behind sections (instead of flat black) */
 @media (min-width: 992px){
   body.theme-football{
+    background-image: url("../img/heroBg.webp") !important;
+    background-repeat: repeat-y !important;
+    background-position: center top !important;
+    background-size: 100% auto !important;
+    background-attachment: scroll;
+  }
+  body.theme-football::after{
+    display: none;
+  }
+}
+
+/* Desktop: show the configured hero background behind sections (instead of flat black) */
+@media (min-width: 992px){
+  body.theme-football{
     background-image: var(--hero-bg-url, var(--site-bg-url, none)) !important;
     background-repeat: no-repeat !important;
     background-position: center top !important;
